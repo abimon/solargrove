@@ -10,9 +10,9 @@
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
     <!-- site metas -->
     <title>SOLAR GROVE | {{$title}}</title>
-    <meta name="keywords" content="">
+    <meta name="keywords" content="Biodigesters,Water Supplies,Energy Storage,Water Pump Inverters,Solar Inverters,Solar Panels">
     <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="author" content="Edimon Ombati(APEK TECH INC.)">
     <!-- bootstrap css -->
     <link rel="stylesheet" href="{{asset('storage/css/bootstrap.min.css')}}">
     <!-- style css -->
@@ -20,7 +20,7 @@
     <!-- Responsive-->
     <link rel="stylesheet" href="{{asset('storage/css/responsive.css')}}">
     <!-- fevicon -->
-    <link rel="icon" href="{{asset('storage/images/fevicon.png')}}" type="image/gif" />
+    <link rel="icon" href="{{asset('storage/images/logo.png')}}" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="{{asset('storage/css/jquery.mCustomScrollbar.min.css')}}">
     <!-- Tweaks for older IEs-->
