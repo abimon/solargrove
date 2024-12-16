@@ -43,11 +43,13 @@
          </div>
       </div>
       <div class="row">
-         @for($i=1;$i<=5;$i++)
-            <div class="col-md-3 col-sm-6 p-2 mb-2">
-               <img src="{{asset('storage/images/products/'.$i.'.png')}}" style="width:100%;height:60vh;object-fit:scale-down" alt="">
-            </div>
-         @endfor
+         <?php $items=['Inverters','Immersion Water Pumps','Solar Panels','Solar Pumps','Water Pumps','Single/Three Phase Generators','Single Phase Generators','Gasoline Generator']?>
+         @foreach ($items as $i=>$item )
+         <div class="col-md-3 col-sm-6 p-2 mb-2">
+            <img src="{{asset('storage/images/products/'.($i+1).'.png')}}" style="width:100%;height:60vh;object-fit:scale-down" alt="">
+            <h3>{{$item}}</h3>
+         </div>
+         @endforeach
       </div>
    </section>
 </div>

@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.app',['title' => 'Login'])
 
 @section('content')
-<div class="container">
+<div class="container m-4">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -10,7 +10,6 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
                         <div class="row mb-3">
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
@@ -65,6 +64,7 @@
                             </div>
                         </div>
                     </form>
+                    <p class="text-center">Don't have an account? <a href="/register">Register</a></p>
                 </div>
             </div>
         </div>

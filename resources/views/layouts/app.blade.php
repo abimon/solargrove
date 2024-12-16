@@ -44,7 +44,7 @@
         <div class="header">
             <div class="container">
                 <div class="row">
-                    <div class="col-3 ">
+                    <div class="col-2 ">
                         <div class="full">
                             <div class="center-desk">
                                 <div class="logo">
@@ -55,7 +55,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-9">
+                    <div class="col-10">
                         <nav class="navigation navbar navbar-expand-md navbar-dark ">
                             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
@@ -74,8 +74,8 @@
                                     <li class="nav-item {{request()->path()=='gallery'?'active':''}}">
                                         <a class="nav-link" href="/gallery">Gallery</a>
                                     </li>
-                                    <li class="nav-item {{request()->path()=='testimonial'?'active':''}}">
-                                        <a class="nav-link" href="/testimonial"> Testimonial </a>
+                                    <li class="nav-item {{request()->path()=='news'?'active':''}}">
+                                        <a class="nav-link" href="/news"> Tech News </a>
                                     </li>
                                     <li class="nav-item {{request()->path()=='contact'?'active':''}}">
                                         <a class="nav-link" href="/contact">Contact Us</a>
@@ -116,7 +116,7 @@
                             <li><a href="/about"> About</a></li>
                             <li><a href="/service">Services</a></li>
                             <li><a href="/gallery">Gallery</a></li>
-                            <li><a href="/testimonial">Testimonial</a></li>
+                            <!-- <li><a href="/testimonial">Testimonial</a></li> -->
                             <li><a href="/contact">Contact Us</a></li>
                         </ul>
                     </div>

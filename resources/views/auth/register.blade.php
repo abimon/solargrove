@@ -1,7 +1,7 @@
-@extends('layouts.app')
+@extends('layouts.app',['title'=>'Register'])
 
 @section('content')
-<div class="container">
+<div class="container m-4">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -69,6 +69,7 @@
                             </div>
                         </div>
                     </form>
+                    <p class="text-center">Have an account? <a href="/login">Login</a>
                 </div>
             </div>
         </div>
