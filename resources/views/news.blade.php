@@ -1,4 +1,4 @@
-@extends('layouts.app',['title'=>'About Us'])
+@extends('layouts.app',['title'=>'Tech News'])
 @section('content')
 <div class="News mt-2 mb-4">
    <div class="container-fluid">
