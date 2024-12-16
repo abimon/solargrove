@@ -6,21 +6,21 @@
          <div class="col-md-8 pad_left0">
             <div id="testimon" class="carousel slide banner_testimonial" data-ride="carousel">
                <ol class="carousel-indicators">
-                  <li data-target="#testimon" data-slide-to="0" class="active"></li>
-                  <li data-target="#testimon" data-slide-to="1"></li>
-                  <li data-target="#testimon" data-slide-to="2"></li>
+                  @foreach ($articles as $k=>$article)
+                  <li data-target="#testimon" data-slide-to="0" class="{{$k==0?'active':''}}"></li>
+                  @endforeach
                </ol>
                <div class="carousel-inner">
-                  @foreach ($articles as $article)
+                  @foreach ($articles as $key=>$article)
                   <div class="carousel-item {{$key==0?'active':''}}">
                      <div class="container">
                         <div class="carousel-caption relative">
                            <div class="row">
                               <div class="col-md-6">
                                  <div class="text_humai">
-                                    <i><img src="/storage/images/articles/{{$article->path}}" alt="#" /></i>
+                                    <i><img src="/storage/{{$article->path}}" alt="#" /></i>
                                     <span>{{$article->title}}</span>
-                                    <div style="overflow:hidden;"><?php echo html_entity_decode($article->content) ?></div>
+                                    <div style=" height:60vh;overflow:hidden;"><?php echo html_entity_decode($article->content) ?></div>
                                  </div>
                               </div>
                            </div>

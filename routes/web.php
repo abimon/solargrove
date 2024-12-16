@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Models\Article;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -20,7 +21,8 @@ Route::get('/contact', function () {
     return view('contact');
 });
 Route::get('/news', function () {
-    return view('news');
+    $articles=Article::where('is_published',true)->get();
+    return view('news',compact('articles'));
 });
 Route::middleware('auth')->group(function () {
     Route::get('/dashboard', function () {
