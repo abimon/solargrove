@@ -9,7 +9,7 @@
                 <div class="col-md-4">
                     <label for="cover"><b>Cover Photo</b></label>
                     <div class="ms-2 card p-3 border-dark bg-transparent shadow" style="border-style:dashed;">
-                        <img id="outCard" src="/storage/{{$article->path}}" style="width: 100%;height:30vh; object-fit:contain;" />
+                        <img id="outCard" src="" style="width: 100%;height:30vh; object-fit:contain;" />
                         <input type="file" accept="image/*" name="cover" id="cover"
                             style="display: none;" class="form-control"
                             onchange="loadcoverFile(event)">
