@@ -2,9 +2,9 @@
 
 @section('content')
 
-<div class="container-fluid">
+
    <!-- banner -->
-   <section class="" style="margin-top:0px;">
+   <div>
       <div id="myCarousel" class="carousel" data-ride="carousel" data-interval="30000">
          <ol class="carousel-indicators">
             @for($i=1;$i<=6;$i++)
@@ -15,9 +15,9 @@
          <div class="carousel-inner">
             @for($i=1;$i<=6;$i++)
                <div class="carousel-item {{$i==1?'active':''}}">
-               <div style="width:100vw;height:80vh;object-fit:fill;">
+               <div style="width:100vw;height:40vh;">
                   <div class="carousel-caption relative">
-                     <video src="{{asset('storage/videos/video'.$i.'.mp4')}}" autoplay muted type="video/mp4"></video>
+                     <video src="{{asset('storage/videos/video'.$i.'.mp4')}}" autoplay muted type="video/mp4" style="width:100vw;height:40vh;object-fit:scale-down;"></video>
                   </div>
                </div>
          </div>
@@ -32,9 +32,9 @@
          <span class="sr-only">Next</span>
       </a>
 
-   </section>
+   </div>
    <!-- end banner -->
-   <section class="mt-5">
+   <div class="mt-5">
       <div class="row">
          <div class="col-md-12">
             <div class="titlepage">
@@ -51,6 +51,5 @@
          </div>
          @endforeach
       </div>
-   </section>
-</div>
+   </div>
 @endsection
