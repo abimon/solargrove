@@ -15,9 +15,9 @@
          <div class="carousel-inner">
             @for($i=1;$i<=6;$i++)
                <div class="carousel-item {{$i==1?'active':''}}">
-               <div style="width:100vw;height:40vh;">
+               <div style="width:100vw;">
                   <div class="carousel-caption relative">
-                     <video src="{{asset('storage/videos/video'.$i.'.mp4')}}" autoplay muted type="video/mp4" style="width:100vw;height:40vh;object-fit:scale-down;"></video>
+                     <video src="{{asset('storage/videos/video'.$i.'.mp4')}}" autoplay muted type="video/mp4" style="width:100vw;object-fit:scale-down;"></video>
                   </div>
                </div>
          </div>
