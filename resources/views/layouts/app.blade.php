@@ -20,7 +20,7 @@
     <!-- Responsive-->
     <link rel="stylesheet" href="{{asset('storage/css/responsive.css')}}">
     <!-- fevicon -->
-    <link rel="icon" href="{{asset('storage/images/logo.png')}}" type="image/gif" />
+    <link rel="icon" href="{{asset('storage/images/Favicon.png')}}" type="image/gif" />
     <!-- Scrollbar Custom CSS -->
     <link rel="stylesheet" href="{{asset('storage/css/jquery.mCustomScrollbar.min.css')}}">
     <!-- Tweaks for older IEs-->
@@ -96,10 +96,10 @@
                         </ul>
                         <p class="variat pad_roght2"></p>
                     </div>
-                    <div class=" col-md-3 col-sm-6">
+                    <!-- <div class=" col-md-3 col-sm-6">
                         <h3>LET US HELP YOU </h3>
                         <p class="variat pad_roght2"></p>
-                    </div>
+                    </div> -->
                     <div class="col-md-3 col-sm-6">
                         <h3>INFORMATION</h3>
                         <ul class="link_menu">

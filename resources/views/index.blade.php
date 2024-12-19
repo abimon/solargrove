@@ -35,6 +35,12 @@
    </div>
    <!-- end banner -->
    <div class="mt-5">
+      <div class="container text-center">
+         <h4 style="font-weight:bold;">WHOLE PRODUCT LINE</h4>
+         <p> Six product types，including domestic pump、submersible pump、solar pump、engineering pump、 deep well pump and circulating pump, solar panels, power generators, control panels, cables and borehole equipment more than 700 types and models of water pump.</p>
+         <p>Product application covers household, agriculture, industry, HVAC and other fields, to become the top pump enterprise in China with the most widely application fields.</p>
+         <p>Products have 3 high lights：high cost performance、high-level appearance and high quality.</p>
+      </div>
       <div class="row">
          <div class="col-md-12">
             <div class="titlepage">
