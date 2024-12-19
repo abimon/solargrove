@@ -66,7 +66,7 @@
                                     <a class="nav-link {{request()->path()=='service'?'text-success':''}}" href="/service">Services</a>
                                 </li>
                                 <li style="font-weight:bold; text-transform:uppercase;" class="nav-item">
-                                    <a class="nav-link {{request()->path()=='gallery'?'text-success':''}}" href="/gallery">Gallery</a>
+                                    <a class="nav-link {{request()->path()=='gallery'?'text-success':''}}" href="/gallery">Project Gallery</a>
                                 </li>
                                 <li style="font-weight:bold; text-transform:uppercase;" class="nav-item">
                                     <a class="nav-link {{request()->path()=='news'?'text-success':''}}" href="/news"> Tech News </a>
