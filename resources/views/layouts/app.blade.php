@@ -8,6 +8,7 @@
     <!-- mobile metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <meta name="google-site-verification" content="YPUyJZwBLpUK-leNWnLCDS0ZGOsJJfZeagQTOymXiTM" />
     <!-- site metas -->
     <title>SOLAR GROVE | {{$title}}</title>
     <meta name="keywords" content="Biodigesters,Water Supplies,Energy Storage,Water Pump Inverters,Solar Inverters,Solar Panels">
