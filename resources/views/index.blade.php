@@ -35,24 +35,25 @@
    </div>
    <!-- end banner -->
    <div class="mt-5">
-      <div class="container text-center">
-         <h4 style="font-weight:bold;">WHOLE PRODUCT LINE</h4>
-         <p> Six product types，including domestic pump、submersible pump、solar pump、engineering pump、 deep well pump and circulating pump, solar panels, power generators, control panels, cables and borehole equipment more than 700 types and models of water pump.</p>
-         <p>Product application covers household, agriculture, industry, HVAC and other fields, to become the top pump enterprise in China with the most widely application fields.</p>
-         <p>Products have 3 high lights：high cost performance、high-level appearance and high quality.</p>
-      </div>
+      
       <div class="row">
          <div class="col-md-12">
             <div class="titlepage">
                <h2>Our <span class="green">Products</span></h2>
             </div>
+            <div class="container text-center">
+         <h4 style="font-weight:bold;">WHOLE PRODUCT LINE</h4>
+         <p> Six product types，including domestic pump、submersible pump、solar pump、engineering pump、 deep well pump and circulating pump, solar panels, power generators, control panels, cables and borehole equipment more than 700 types and models of water pump.</p>
+         <p>Product application covers household, agriculture, industry, HVAC and other fields, to become the top pump enterprise in China with the most widely application fields.</p>
+         <p>Products have 3 high lights：high cost performance、high-level appearance and high quality.</p>
+      </div>
          </div>
       </div>
       <div class="row">
          <?php $items=['Inverters','Immersion Water Pumps','Solar Panels','Solar Pumps','Water Pumps','Single/Three Phase Generators','Single Phase Generators','Gasoline Generator']?>
          @foreach ($items as $i=>$item )
          <div class="col-md-3 col-sm-6 p-2 mb-2">
-            <img src="{{asset('storage/images/products/'.($i+1).'.png')}}" style="width:100%;height:60vh;object-fit:scale-down" alt="">
+            <img src="{{asset('storage/images/products/'.($i+1).'.png')}}" style="width:100%;height:40vh;object-fit:scale-down;" alt="">
             <h3>{{$item}}</h3>
          </div>
          @endforeach

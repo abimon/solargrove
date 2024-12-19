@@ -73,7 +73,7 @@ h6 {
      padding: 0 0 10px 0;
      font-weight: normal;
      line-height: normal;
-     color: #111111;
+     color: #75bb3e;
      margin: 0
 }
 
@@ -353,7 +353,7 @@ button {
 }
 
 .text-bg .read_more:hover {
-     background-color: #0d0c0c;
+     background-color: #075056;
 }
 
 .banner .carousel-indicators {
@@ -364,7 +364,7 @@ button {
 #myCarousel .carousel-control-next {
      width: 36px;
      height: 36px;
-     background: #0d0c0c;
+     background: #075056;
      opacity: 1;
      font-size: 25px;
      color: #fff;
@@ -424,7 +424,7 @@ button {
 }
 
 .green {
-     color: #16e816 !important;
+     color: #75bb3e !important;
 }
 
 .d_flex {
@@ -447,7 +447,7 @@ button {
 }
 
 .read_more:hover {
-     background: #16e816;
+     background: #75bb3e;
      color: #fff;
      transition: ease-in all 0.5s;
 }
@@ -638,7 +638,7 @@ button {
 #design .carousel-control-next {
      width: 83px;
      height: 76px;
-     background: #0d0c0c;
+     background: #075056;
      opacity: 1;
      font-size: 35px;
      color: #fff;
@@ -755,7 +755,7 @@ button {
 }
 
 .latest_news .news_box .news_room ul li a:hover {
-     color: #16e816 !important;
+     color: #75bb3e !important;
 }
 
 .latest_news .news_box .news_room ul li:last-child a {
@@ -847,7 +847,7 @@ button {
 #testimon .carousel-control-next {
      width: 83px;
      height: 76px;
-     background: #0d0c0c;
+     background: #075056;
      opacity: 1;
      font-size: 35px;
      color: #fff;
@@ -964,7 +964,7 @@ button {
 /** footer **/
 
 .footer {
-     background: #202020;
+     background: #075056;
      padding-top: 80px;
      text-align: center;
 }
@@ -997,7 +997,7 @@ ul.social_icon li a {
      font-size: 20px;
      border-radius: 30px;
      margin: 0 3px;
-     color: #202020;
+     color: #075056;
      background: #fff;
      width: 35px;
      height: 35px;

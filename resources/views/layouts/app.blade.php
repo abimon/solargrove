@@ -46,7 +46,7 @@
                 <nav class="navbar navbar-expand-md">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="/">
-                        <img src="{{asset('storage/images/logo.png')}}" alt="#" style="height:10vh;" />
+                            <img src="{{asset('storage/images/logo.png')}}" alt="#" style="height:10vh;" />
                         </a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon">
@@ -81,26 +81,31 @@
         </div>
     </header>
     <div class="container">
-    @yield('content')
+        @yield('content')
     </div>
     <footer>
         <div class="footer">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class=" col-md-3 col-sm-6">
-                        <ul class="social_icon">
+                    <div class="col-sm-6 text-center">
+
+                        <!-- <p class="variat pad_roght2"></p> -->
+                        <form id="hkh" class="bottom_form">
+                            <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
+                            <button class="sub_btn">subscribe</button>
+                        </form>
+                        <ul class="social_icon d-flex justify-content-center">
                             <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                             <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                         </ul>
-                        <p class="variat pad_roght2"></p>
                     </div>
                     <!-- <div class=" col-md-3 col-sm-6">
                         <h3>LET US HELP YOU </h3>
                         <p class="variat pad_roght2"></p>
                     </div> -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-sm-6 text-end">
                         <h3>INFORMATION</h3>
                         <ul class="link_menu">
                             <li><a href="/">Home</a></li>
@@ -111,27 +116,18 @@
                             <li><a href="/contact">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-sm-6">
-                        <h3>OUR Design</h3>
-                        <p class="variat"></p>
-                    </div>
-                    <div class="col-md-6 offset-md-6">
-                        <form id="hkh" class="bottom_form">
-                            <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
-                            <button class="sub_btn">subscribe</button>
-                        </form>
-                    </div>
                 </div>
-            </div>
-            <div class="copyright">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1">
-                            <p>© {{date('Y')}} All Rights Reserved. Design by <a href="https://apektechinc.com"> APEK TECH INC</a></p>
+                <div class="mt-2 text-white">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-10 offset-md-1">
+                                <p>© {{date('Y')}} All Rights Reserved. Design by <a href="https://apektechinc.com" class="text-success"> APEK TECH INC</a></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </footer>
     <!-- end footer -->
