@@ -5,7 +5,7 @@
       <div class="row">
          <div class="col-md-12">
             <div class="titlepage">
-               <h2>Our <span class="green">Gallery</span></h2>
+               <h2>Our <span class="green">Project Gallery</span></h2>
                <p>Part of what we do and have done.</p>
             </div>
          </div>
