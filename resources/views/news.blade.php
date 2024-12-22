@@ -21,6 +21,7 @@
                                     <i><img src="/storage/{{$article->path}}" alt="#" /></i>
                                     <span>{{$article->title}}</span>
                                     <div style=" height:60vh;overflow:hidden;"><?php echo html_entity_decode($article->content) ?></div>
+                                     <a href="/news/{{$article->id}}" class="btn btn-primary">Read More</a>
                                  </div>
                               </div>
                            </div>

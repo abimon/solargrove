@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ContactController;
 use App\Http\Middleware\isAdmin;
 use App\Models\Article;
 use Illuminate\Support\Facades\Auth;
@@ -24,6 +25,14 @@ Route::get('/contact', function () {
 Route::get('/news', function () {
     $articles=Article::where('is_published',true)->get();
     return view('news',compact('articles'));
+});
+Route::get('/news/{article}', [ArticleController::class, 'show']);
+Route::controller(ContactController::class)->group(function () {
+    Route::get('/contact/index', 'index');
+    Route::post('/contactform', 'store');
+    Route::get('/contact/{contact}', 'show')->middleware('auth');
+    Route::put('/contact/{contact}', 'update');
+    Route::delete('/contact/{contact}', 'destroy');
 });
 Route::middleware(['auth',isAdmin::class])->group(function () {
     Route::get('/dashboard', function () {

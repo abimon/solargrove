@@ -7,7 +7,7 @@
   <meta
     content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     name="viewport" />
-    <meta name="keywords" content="Biodigesters,Water Supplies,Energy /storage,Water Pump Inverters,Solar Inverters,Solar Panels">
+  <meta name="keywords" content="Biodigesters,Water Supplies,Energy /storage,Water Pump Inverters,Solar Inverters,Solar Panels">
   <link rel="icon" href="{{asset('/storage/images/logo.png')}}" type="image/gif" />
   <!-- Fonts and icons -->
   <script src="/storage/assets/js/plugin/webfont/webfont.min.js"></script>
@@ -69,8 +69,8 @@
       <div class="sidebar-wrapper scrollbar scrollbar-inner">
         <div class="sidebar-content">
           <ul class="nav nav-secondary">
-            
-            
+
+
             <li class="nav-item">
               <a href="/dashboard">
                 <i class="fa fa-gauge"></i>
@@ -81,6 +81,12 @@
               <a href="/dashboard#articles">
                 <i class="fas fa-layer-group"></i>
                 <p>Articles</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact/index">
+                <i class="fas fa-comments"></i>
+                <p>Messages</p>
               </a>
             </li>
           </ul>
@@ -175,67 +181,25 @@
                     <div
                       class="dropdown-title d-flex justify-content-between align-items-center">
                       Messages
-                      <a href="#" class="small">Mark all as read</a>
+                      <a href="/contact/index" class="small">Mark all as read</a>
                     </div>
                   </li>
+                  @foreach (App\Models\Contact::orderBy('created_at','asc')->take(3)->latest()->get() as $message)
                   <li>
                     <div class="message-notif-scroll scrollbar-outer">
-                      <div class="notif-center">
-                        <a href="#">
-                          <div class="notif-img">
-                            <img
-                              src="/storage/assets/img/jm_denis.jpg"
-                              alt="Img Profile" />
-                          </div>
-                          <div class="notif-content">
-                            <span class="subject">Jimmy Denis</span>
-                            <span class="block"> How are you ? </span>
-                            <span class="time">5 minutes ago</span>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="notif-img">
-                            <img
-                              src="/storage/assets/img/chadengle.jpg"
-                              alt="Img Profile" />
-                          </div>
-                          <div class="notif-content">
-                            <span class="subject">Chad</span>
-                            <span class="block"> Ok, Thanks ! </span>
-                            <span class="time">12 minutes ago</span>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="notif-img">
-                            <img
-                              src="/storage/assets/img/mlane.jpg"
-                              alt="Img Profile" />
-                          </div>
-                          <div class="notif-content">
-                            <span class="subject">Jhon Doe</span>
-                            <span class="block">
-                              Ready for the meeting today...
-                            </span>
-                            <span class="time">12 minutes ago</span>
-                          </div>
-                        </a>
-                        <a href="#">
-                          <div class="notif-img">
-                            <img
-                              src="/storage/assets/img/talha.jpg"
-                              alt="Img Profile" />
-                          </div>
-                          <div class="notif-content">
-                            <span class="subject">Talha</span>
-                            <span class="block"> Hi, Apa Kabar ? </span>
-                            <span class="time">17 minutes ago</span>
-                          </div>
-                        </a>
+                      <div class="notif-center ms-3 p-2">
+                        <div class="notif-content">
+                          <div class="fw-bold">{{$message->name}}({{$message->email}})</div>
+                          <div class="block"> {{$message->message}} </div>
+                          <div class="text-end">{{$message->created_at->diffForHumans()}}</div>
+                        </div>
                       </div>
                     </div>
                   </li>
+                  <hr>
+                  @endforeach
                   <li>
-                    <a class="see-all" href="javascript:void(0);">See all messages<i class="fa fa-angle-right"></i>
+                    <a class="see-all" href="/contact/index">See all messages<i class="fa fa-angle-right"></i>
                     </a>
                   </li>
                 </ul>
@@ -441,7 +405,7 @@
 
       <div class="container">
         <div class="page-inner">
-            @yield('dashboard')
+          @yield('dashboard')
         </div>
       </div>
       <footer class="footer">
