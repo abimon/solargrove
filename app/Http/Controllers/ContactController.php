@@ -45,7 +45,7 @@ class ContactController extends Controller
         ]);
         $data = [
             "name" => request('name'),
-            "message" => request('message'), 
+            "mailmessage" => request('message'), 
             "email" => request('email'), 
             "phone" => request('contact')
         ];
