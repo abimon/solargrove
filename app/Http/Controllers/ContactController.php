@@ -53,7 +53,7 @@ class ContactController extends Controller
             'mails.message',
             $data,
             function ($message)  {
-                $message->to("elijahmecha6@gmail.com", "Admin")->subject('Contact Message from '.request('name'));
+                $message->to("eddyabby59@gmail.com", "Admin")->subject('Contact Message from '.request('name'));
             }
         );
 
