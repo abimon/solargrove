@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Contact;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -42,6 +43,19 @@ class ContactController extends Controller
             'phone' => $request->contact,
             'message' => $request->message,
         ]);
+        $data = [
+            "name" => request('name'),
+            "message" => request('message'), 
+            "email" => request('email'), 
+            "phone" => request('contact')
+        ];
+        Mail::send(
+            'mails.message',
+            $data,
+            function ($message)  {
+                $message->to("elijahmecha6@gmail.com", "Admin")->subject('Contact Message from '.request('name'));
+            }
+        );
 
         return redirect('/')->with('message', 'Your message has been sent successfully!');
     }
